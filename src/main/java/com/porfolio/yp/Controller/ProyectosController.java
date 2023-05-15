@@ -61,7 +61,7 @@ public class ProyectosController {
             return new ResponseEntity(new Mensaje("Esa Proyecto ya existe"), HttpStatus.BAD_REQUEST);
         }
 
-        ProyectosEntity proyect = new ProyectosEntity(dtoproy.getNombre(), dtoproy.getDescripcion(), dtoproy.getUrl());
+        ProyectosEntity proyect = new ProyectosEntity(dtoproy.getNombre(), dtoproy.getDescripcion());
         ProyectoServ.save(proyect);
 
         return new ResponseEntity(new Mensaje("Proyecto agregada"), HttpStatus.OK);
@@ -86,7 +86,6 @@ public class ProyectosController {
         ProyectosEntity proyect = ProyectoServ.getOne(id).get();
         proyect.setNombre(dtoproyect.getNombre());
         proyect.setDescripcion(dtoproyect.getDescripcion());
-        proyect.setUrl(dtoproyect.getUrl());
         
 
         ProyectoServ.save(proyect);

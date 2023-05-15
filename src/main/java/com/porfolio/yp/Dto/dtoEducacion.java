@@ -12,26 +12,16 @@ public class dtoEducacion {
     
     private String tiempo;
     
-    private String img;
 
     public dtoEducacion() {
     }
 
-    public dtoEducacion(String nombre, String descripcion, String tiempo, String img) {
+    public dtoEducacion(String nombre, String descripcion, String tiempo) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.tiempo = tiempo;
-        this.img = img;
     }
 
-    public String getImg() {
-        return img;
-    }
-
-    public void setImg(String img) {
-        this.img = img;
-    }
-    
     
 
     public String getNombre() {

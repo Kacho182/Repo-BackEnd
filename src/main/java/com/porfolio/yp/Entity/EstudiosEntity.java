@@ -15,20 +15,14 @@ public class EstudiosEntity {
     private String nombre;
     private String descripcion;
     private String tiempo;
-    private String img;
 
     public EstudiosEntity() {
     }
 
-    public EstudiosEntity(String nombre, String descripcion, String tiempo, String img) {
+    public EstudiosEntity(String nombre, String descripcion, String tiempo) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.tiempo = tiempo;
-        this.img = img;
-    }
-
-    public String getImg() {
-        return img;
     }
 
     public void setNombre(String nombre) {
@@ -37,10 +31,6 @@ public class EstudiosEntity {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
-    }
-
-    public void setImg(String img) {
-        this.img = img;
     }
 
 
